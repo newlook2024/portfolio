@@ -22,11 +22,11 @@
     /* user-select: none; */
   }
 
-  html{
+  html {
     scroll-behavior: smooth;
   }
 
-  body{
+  body {
     font-family: 'Inter', sans-serif;
     font-family: 'Source Code Pro', monospace;
     color: #ffffff7c;
@@ -36,7 +36,7 @@
     justify-content: space-between;
   }
 
-  .bgImage{
+  .bgImage {
     background-image: url(/img/home/backgrounds/backgroundCrystal.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -52,7 +52,7 @@
     padding-bottom: 20px;
     background-color: #ffffff1a;
   }
-  
+
 
   .header-container {
     max-width: 1210px;
@@ -233,12 +233,12 @@
     margin-bottom: 80px;
   }
 
-  .projectFace{
+  .projectFace {
     width: 100%;
     height: 100%;
   }
-  
-  .projectFaceBox-left{
+
+  .projectFaceBox-left {
     width: 100%;
     position: relative;
     height: 100%;
@@ -246,7 +246,7 @@
     overflow: hidden;
   }
 
-  .Go-left{
+  .Go-left {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -261,11 +261,11 @@
     transition: all .4s;
   }
 
-  .projectFaceBox-left:hover .Go-left{
+  .projectFaceBox-left:hover .Go-left {
     left: 0;
   }
 
-  .projectFaceBox-center{
+  .projectFaceBox-center {
     width: 100%;
     position: relative;
     height: 100%;
@@ -273,7 +273,7 @@
     overflow: hidden;
   }
 
-  .Go-center{
+  .Go-center {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -289,10 +289,11 @@
     transition: all .4s;
   }
 
-  .projectFaceBox-center:hover .Go-center{
+  .projectFaceBox-center:hover .Go-center {
     opacity: 1;
   }
-  .projectFaceBox-right{
+
+  .projectFaceBox-right {
     width: 100%;
     position: relative;
     height: 100%;
@@ -300,7 +301,7 @@
     overflow: hidden;
   }
 
-  .Go-right{
+  .Go-right {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -315,16 +316,16 @@
     transition: all .4s;
   }
 
-  .projectFaceBox-right:hover .Go-right{
+  .projectFaceBox-right:hover .Go-right {
     right: 0;
   }
 
-  .project{
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      /* grid-template-rows: repeat(5, 1fr);  */
-      grid-column-gap: 20px;
-      grid-row-gap: 20px;
+  .project {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* grid-template-rows: repeat(5, 1fr);  */
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
   }
 
   .footer {
@@ -333,6 +334,7 @@
     background-color: #00000048;
     margin-top: auto;
   }
+
   .footer-container {
     max-width: 1210px;
     padding-left: 20px;
@@ -340,6 +342,7 @@
     margin-left: auto;
     margin-right: auto;
   }
+
   .footer-logo {
     display: flex;
     width: 60px;
@@ -359,9 +362,11 @@
     align-items: center;
     justify-content: space-between;
   }
+
   .footer-list {
     list-style: none;
   }
+
   .footer-link {
     color: #ffffff80;
     text-decoration: none;
@@ -377,7 +382,7 @@
     line-height: 120%;
   }
 
-  .burger{
+  .burger {
     width: 30px;
     height: 30px;
     background-color: transparent;
@@ -394,9 +399,11 @@
     position: fixed;
     left: -100%;
     top: 0;
-    z-index: 2;
+    z-index: 9999;
     padding-top: 20%;
+    transition: all .25s;
   }
+
   .Res-nav-list {
     display: flex;
     flex-direction: column;
@@ -405,11 +412,13 @@
     width: 100%;
     list-style: none;
   }
+
   .res-nav-item {
     width: 80%;
     margin-left: auto;
     margin-right: auto;
   }
+
   .res-nav-link {
     font-size: 22px;
     font-weight: 600;
@@ -418,7 +427,7 @@
     text-decoration: none;
   }
 
-  .res-nav-link:hover{
+  .res-nav-link:hover {
     color: #ffffff7a;
     text-decoration: underline;
   }
@@ -434,45 +443,146 @@
     transition: all .3s;
   }
 
-  .res-contact-us:hover{
+  .res-contact-us:hover {
     color: #ffffffd8;
     border: 1.5px solid #ffffffdc;
     text-decoration: underline;
   }
 
+  .close {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    background-color: #ffffff00;
+    width: 100%;
+    height: 100vh;
+    z-index: 999;
+  }
 
-  @media(max-width:768px){
-    .header{
+
+  @media(max-width:768px) {
+    .header {
       padding-top: 15px;
       padding-bottom: 15px;
     }
 
-    .nav-list{
+    .nav-list {
       display: none;
     }
 
-    .burger{
+    .burger {
       display: flex;
     }
 
-    .contact-us{
+    .contact-us {
       display: none;
     }
 
-    .hero{
+    .hero {
       padding-top: 40px;
       padding-bottom: 40px;
     }
 
-    .hero-container{
+    .hero-container {
       flex-direction: column;
-      gap: 28px;
+      gap: 18px;
     }
 
-    .avatar{
+    .avatar {
       width: 130px;
       height: 130px;
     }
 
- 
+    .myName {
+      font-size: 22px;
+      text-align: center;
+      letter-spacing: 1.2px;
+      line-height: 110%;
+      margin-bottom: 14px;
+    }
+
+    .myHeroText {
+      font-size: 14px;
+      letter-spacing: 1px;
+      font-weight: 400;
+      margin-bottom: 13px;
+      text-align: center;
+      line-height: 150%;
+    }
+
+    .myWebAddress {
+      justify-content: center;
+    }
+
+    .tel {
+      width: 28px;
+      height: 28px;
+    }
+
+    .Projects-title {
+      font-size: 18px;
+      margin-bottom: 46px;
+      font-weight: 500
+    }
+
+    .project {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      /* grid-template-rows: repeat(5, 1fr); */
+      grid-column-gap: 20px;
+      grid-row-gap: 20px;
+    }
+
+    .Go-right {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      color: #ffffffd3;
+      font-size: 20px;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #000000be;
+      right: 0;
+      opacity: 0;
+      transition: all .4s;
+    }
+
+    .projectFaceBox-right:hover .Go-right {
+      opacity: 1;
+    }
+
+    .Go-left {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      color: #ffffffd3;
+      font-size: 20px;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #000000be;
+      left: 0%;
+      opacity: 0;
+      transition: all .4s;
+    }
+
+    .projectFaceBox-left:hover .Go-left {
+      opacity: 1;
+    }
+
+    .footer-item{
+      text-align: end;
+    }
+
+    .footer-link{
+      font-size: 14px;
+    }
+
+    .footer-link:hover{
+      font-size: 14px;
+    }
   }
