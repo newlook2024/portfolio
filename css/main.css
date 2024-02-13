@@ -461,8 +461,18 @@
     z-index: 999;
   }
 
+  .project-res{
+    display: none;
+  }
 
   @media(max-width:768px) {
+
+    .project-res{
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
     .header {
       padding-top: 15px;
       padding-bottom: 15px;
@@ -528,7 +538,7 @@
     }
 
     .project {
-      display: grid;
+      display: none;
       grid-template-columns: repeat(1, 1fr);
       /* grid-template-rows: repeat(5, 1fr); */
       grid-column-gap: 20px;
