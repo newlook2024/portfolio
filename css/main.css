@@ -551,6 +551,10 @@
       transition: all .4s;
     }
 
+    .projectFaceBox-right .projectFaceBox-left{
+      display: none;
+    }
+
     .projectFaceBox-right:hover .Go-right {
       opacity: 1;
     }
