@@ -467,6 +467,7 @@
 
   @media(max-width:768px) {
 
+
     .project-res{
       display: flex;
       flex-direction: column;
