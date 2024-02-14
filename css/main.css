@@ -41,7 +41,7 @@
     background-image: url(/img/home/backgrounds/backgroundCrystal.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    min-height: 100vh;
+    min-height: 150vh;
     position: fixed;
     top: 0;
     width: 100%;
@@ -465,7 +465,16 @@
     display: none;
   }
 
+  .karopka{
+    display: block;
+    min-height: 170px
+  }
+
   @media(max-width:768px) {
+
+    body{
+      overflow-x: hidden;
+    }
 
 
     .project-res{
